@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Your Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+
+  <body>
+    <!-- FIXED NAV BAR -->
+    <header class="header">
+      <div class="header_logo">
+        <span class="logo_image"
+          ><img src="logo image.jpg" alt="NutriTrack Logo" class="image_logo"
+        /></span>
+        <h1 class="header_heading">NutriTrack</h1>
+      </div>
+      <nav class="header-nav">
+        <ul class="header_unordered_list_items">
+          <li class="header_unordered_list_item">
+            <a
+              href="../HOME SCREEN FOLDER/home.html"
+              class="header_unordered_list_item_link"
+              >Home</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a href="" class="header_unordered_list_item_link">Log Meals</a>
+          </li>
+          <li class="header_unordered_list_item">
+            <a href="" class="header_unordered_list_item_link"
+              >Meal Suggestions</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../DASHBOARD FOLDER/dashboard.html"
+              class="header_unordered_list_item_link"
+              >Dashboard</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../REMINDER FOLDER/reminder.html"
+              class="header_unordered_list_item_link"
+              >Reminder</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a href="./profile.html" class="header_unordered_list_item_link"
+              >Profile</a
+            >
+          </li>
+        </ul>
+        <button
+          class="header_nav_button"
+          type="submit"
+          href="../index.html"
+          id="logoutBtn"
+          target="_blank"
+        >
+          logout
+        </button>
+      </nav>
+    </header>
+
+    <!-- PROFILE BODY -->
+    <div class="container">
+      <h1 class="profile_title">Your Profile</h1>
+      <p class="subtitle">Manage your fitness profile and goals</p>
+
+      <!-- PROFILE CARD -->
+      <div class="card">
+        <h2>Profile Information</h2>
+        <p class="section-desc">
+          Update your personal details and fitness goals
+        </p>
+
+        <div id="displayMode">
+          <div class="info-row">
+            <div class="label">Full Name</div>
+            <div class="value" id="displayName"><strong>username</strong></div>
+          </div>
+
+          <div class="info-row">
+            <div class="label">Email</div>
+            <div class="value" id="displayEmail">
+              <strong>user@email.com</strong>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div class="label">Daily Calorie Target</div>
+            <div class="value">
+              <strong id="displayCalories">2000</strong>
+              <strong style="color: var(--muted)">calories</strong>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div class="label">Fitness Goal</div>
+            <div class="value" id="displayGoal">
+              <strong>Maintenance</strong>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div class="label">Member Since</div>
+            <div class="value" id="memberSince">
+              <strong>03/11/2025</strong>
+            </div>
+          </div>
+
+          <button id="editBtn" class="primary-btn">Edit Profile</button>
+        </div>
+
+        <div id="editMode" style="display: none">
+          <div class="form-row">
+            <label>Full Name</label>
+            <input id="nameInput" type="text" />
+          </div>
+
+          <div class="form-row">
+            <label>Email</label>
+            <input id="emailInput" type="email" />
+          </div>
+
+          <div class="form-row">
+            <label>Daily Calorie Target</label>
+            <input id="calorieInput" type="number" />
+          </div>
+
+          <div class="form-row">
+            <label>Fitness Goal</label>
+            <select id="goalInput">
+              <option>Weight Loss</option>
+              <option>Muscle Gain</option>
+              <option selected>Maintenance</option>
+              <option>Endurance</option>
+            </select>
+          </div>
+
+          <div class="button-row">
+            <button id="saveBtn" class="primary-btn">Save Changes</button>
+            <button id="cancelBtn" class="secondary-btn">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACCOUNT STATS CARD -->
+      <div class="card" style="padding: 18px">
+        <h2>Account Stats</h2>
+        <p class="section-desc" style="margin-bottom: 14px">
+          Overview of your account
+        </p>
+
+        <div class="info-row">
+          <div class="label">Account Status</div>
+          <div class="value" style="color: var(--accent); font-weight: 700">
+            Active
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="label">Profile Completion</div>
+          <div class="value" style="font-weight: 700">100%</div>
+        </div>
+
+        <hr
+          style="border: none; border-top: 1px solid #e6e6e6; margin: 14px 0"
+        />
+
+        <p style="font-size: 14px; color: var(--muted); font-weight: 500">
+          Your profile is complete and you're ready to start tracking your
+          fitness journey.
+        </p>
+      </div>
+    </div>
+
+    <script src="profile.js" checkUserSession()></script>
+    <script src="session_guard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goal-Based Reminders</title>
+    <link rel="stylesheet" href="reminder.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <header class="header">
+      <div class="header_logo">
+        <span class="logo_image"
+          ><img
+            src="../PROFILE FOLDER/logo image.jpg"
+            alt="NutriTrack Logo"
+            class="image_logo"
+        /></span>
+        <h1 class="header_heading">NutriTrack</h1>
+      </div>
+      <nav class="header-nav">
+        <ul class="header_unordered_list_items">
+          <li class="header_unordered_list_item">
+            <a
+              href="../HOME SCREEN FOLDER/home.html"
+              class="header_unordered_list_item_link"
+              >Home</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a href="" class="header_unordered_list_item_link">Log Meals</a>
+          </li>
+          <li class="header_unordered_list_item">
+            <a href="" class="header_unordered_list_item_link"
+              >Meal Suggestions</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../DASHBOARD FOLDER/dashboard.html"
+              class="header_unordered_list_item_link"
+              >Dashboard</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a href="./reminder.html" class="header_unordered_list_item_link"
+              >Reminder</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../PROFILE FOLDER/profile.html"
+              class="header_unordered_list_item_link"
+              >Profile</a
+            >
+          </li>
+        </ul>
+        <button
+          class="header_nav_button"
+          type="submit"
+          href="../index.html"
+          id="logoutBtn"
+          target="_blank"
+        >
+          logout
+        </button>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <div class="text-group">
+      <h1>Goal-Based Reminders</h1>
+      <p>Set Reminders For your Meals, Hydration and Workouts</p>
+    </div>
+    <section class="reminder-section">
+      <div class="reminder__card">
+        <div class="reminder-state" id="reminder-state">
+          <div id="reminder-list">
+            <h2>My Reminders</h2>
+            <p class="empty-text">No Reminders Set</p>
+          </div>
+          <div class="reminder__set">
+            <p>Let's set up your first reminder.</p>
+            <button id="add-reminder-btn">+ Add Reminder</button>
+          </div>
+        </div>
+
+        <div class="reminder_setup hidden" id="reminder-setup">
+          <h3 class="reminder_setup-heading">Set Your Reminders</h3>
+
+          <form class="reminder-form" id="reminder-form">
+            <div class="form-group">
+              <label for="reminder-type">Reminder Type</label>
+              <select name="reminder-type" id="reminder-type">
+                <option value="Meal">Meal</option>
+                <option value="Hydration">Hydration</option>
+                <option value="Workout">Workout</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="reminder-time">Time</label>
+              <input
+                type="time"
+                id="reminder-time"
+                name="reminder-time"
+                value="08:00"
+                required
+              />
+            </div>
+
+            <div class="reminder__setup-btn">
+              <button type="submit">Save Reminder</button>
+              <button type="button" id="cancel-btn">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="suggestion__card" id="suggestion-card">
+        <h3 class="suggestion-heading">Quick Suggestions</h3>
+        <p class="suggestion-paragraph">Get started in one click...</p>
+
+        <div class="suggestions" id="suggest-breakfast">
+          <p>8:00 AM</p>
+          <p>Breakfast</p>
+        </div>
+        <div class="suggestions" id="suggest-lunch">
+          <p>12:30 PM</p>
+          <p>Lunch</p>
+        </div>
+        <div class="suggestions" id="suggest-dinner">
+          <p>7:00 PM</p>
+          <p>Dinner</p>
+        </div>
+        <div class="suggestions" id="suggest-workout-am">
+          <p>6:30 AM</p>
+          <p>Workout</p>
+        </div>
+        <div class="suggestions" id="suggest-workout-pm">
+          <p>5:30 PM</p>
+          <p>Workout</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="reminder.js" checkUserSession()></script>
+    <script src="session_guard.js"></script>
+  </body>
+</html>

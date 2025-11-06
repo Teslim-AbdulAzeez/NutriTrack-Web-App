@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Screen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <script src="home.js" defer></script>
+    <script src="session_guard.js" defer></script>
+  </head>
+  <body>
+    <!-- FIXED NAV BAR -->
+    <header class="header">
+      <div class="header_logo">
+        <span class="logo_image"
+          ><img
+            src="../PROFILE FOLDER/logo image.jpg"
+            alt="NutriTrack Logo"
+            class="image_logo"
+        /></span>
+        <h1 class="header_heading">NutriTrack</h1>
+      </div>
+      <nav class="header-nav">
+        <ul class="header_unordered_list_items">
+          <li class="header_unordered_list_item">
+            <a href="./home.html" class="header_unordered_list_item_link"
+              >Home</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a href="" class="header_unordered_list_item_link">Log Meals</a>
+          </li>
+          <li class="header_unordered_list_item">
+            <a href="" class="header_unordered_list_item_link"
+              >Meal Suggestions</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../DASHBOARD FOLDER/dashboard.html"
+              class="header_unordered_list_item_link"
+              >Dashboard</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../REMINDER FOLDER/reminder.html"
+              class="header_unordered_list_item_link"
+              >Reminder</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../PROFILE FOLDER/profile.html"
+              class="header_unordered_list_item_link"
+              >Profile</a
+            >
+          </li>
+        </ul>
+        <button
+          class="header_nav_button"
+          type="submit"
+          href="../SIGN IN FOLDER/sign_in.html"
+          id="logoutBtn"
+          target="_blank"
+        >
+          logout
+        </button>
+      </nav>
+    </header>
+
+    <section class="container">
+      <div class="greeting_container">
+        <div class="greeting">
+          <h2>Hello, Samuel</h2>
+          <p>27th June 2025</p>
+        </div>
+        <div class="notification">
+          <a href="../REMINDER FOLDER/reminder.html" class="bell_icon"
+            ><i class="ph-fill ph-bell-ringing notification_icon"></i
+          ></a>
+        </div>
+      </div>
+      <div class="diet-assistant">
+        <h3>DIETARY ASSISTANT</h3>
+        <h1>Smart Suggestions</h1>
+      </div>
+
+      <!-- DAILY CHECK-IN CARD -->
+      <div class="both_container">
+        <div class="daily-checkin">
+          <h3>Daily Check-In</h3>
+          <div class="days">
+            <span>24 Mon</span>
+            <span>25 Tue</span>
+            <span>26 Wed</span>
+            <span class="active">27 Thu</span>
+            <span>28 Fri</span>
+            <span>29 Sat</span>
+            <span>30 Sun</span>
+          </div>
+          <div class="meals">
+            <div class="meal">
+              <p>Breakfast</p>
+              <span>--</span>
+            </div>
+            <div class="meal">
+              <p>Lunch</p>
+              <span>--</span>
+            </div>
+            <div class="meal">
+              <p>Dinner</p>
+              <span>--</span>
+            </div>
+          </div>
+          <div>
+            <button class="log-meal" href="">Log Meal</button>
+          </div>
+        </div>
+
+        <!-- SUGGESTION CARD -->
+        <div class="suggestion">
+          <div class="meal_suggestion">
+            <h6>Smart Suggestions</h6>
+            <p class="suggestion_description">What're you hungry for today?</p>
+            <button class="take_suggestions-btn" href="">
+              Take Suggestions
+            </button>
+          </div>
+          <img
+            src="WhatsApp Image home.jpeg"
+            alt="Meal suggestion"
+            class="meal_image"
+          />
+        </div>
+      </div>
+
+      <!-- COMMUNITY CARD -->
+      <div class="community">
+        <div class="community-card">
+          <span><img src="hand.jpg" alt="" class="hand" /></span>
+          <div class="community_extension">
+            <p class="community_nutrition">Nutrition on</p>
+            <p class="line_break">your mind?</p>
+            <a class="visit" href="">Visit the community</a>
+          </div>
+          <a class="community_icon" href=""
+            ><i class="ph-fill ph-arrow-circle-up-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

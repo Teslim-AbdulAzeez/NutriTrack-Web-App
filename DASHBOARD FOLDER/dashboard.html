@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Dashboard</title>
+    <link rel="stylesheet" href="Dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <header class="header">
+      <div class="header_logo">
+        <span class="logo_image"
+          ><img
+            src="../PROFILE FOLDER/logo image.jpg"
+            alt="NutriTrack Logo"
+            class="image_logo"
+        /></span>
+        <h1 class="header_heading">NutriTrack</h1>
+      </div>
+      <nav class="header-nav">
+        <ul class="header_unordered_list_items">
+          <li class="header_unordered_list_item">
+            <a
+              href="../HOME SCREEN FOLDER/home.html"
+              class="header_unordered_list_item_link"
+              >Home</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a href="" class="header_unordered_list_item_link">Log Meals</a>
+          </li>
+          <li class="header_unordered_list_item">
+            <a href="" class="header_unordered_list_item_link"
+              >Meal Suggestions</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a href="./dashboard.html" class="header_unordered_list_item_link"
+              >Dashboard</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../REMINDER FOLDER/reminder.html"
+              class="header_unordered_list_item_link"
+              >Reminder</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../PROFILE FOLDER/profile.html"
+              class="header_unordered_list_item_link"
+              >Profile</a
+            >
+          </li>
+        </ul>
+        <button
+          class="header_nav_button"
+          type="submit"
+          href="../index.html"
+          id="logoutBtn"
+          target="_blank"
+        >
+          logout
+        </button>
+      </nav>
+    </header>
+    <!-- DASHBOARD CONTENT -->
+    <section class="container">
+      <header class="dashboard-header">
+        <h1>Dashboard</h1>
+        <p class="date" id="currentDate">Thursday,November 6,2025</p>
+      </header>
+
+      <main class="dashboard-grid">
+        <!-- Stats Card -->
+        <div class="card stats-card">
+          <div class="card-header">
+            <h2 class="card-title">Today's Stats</h2>
+            <span class="card-icon">📊</span>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-value" id="totalCalories">0</div>
+              <div class="stat-label">Calories</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value" id="totalMeals">0</div>
+              <div class="stat-label">Meals</div>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="calorieProgress">0%</div>
+          </div>
+          <p class="goal-text">Daily Goal: 2000 cal</p>
+        </div>
+
+        <!-- Today's Meals Card -->
+        <section class="card meals-card">
+          <div class="card-header">
+            <h2 class="card-title">Today's Meals</h2>
+            <span class="card-icon">🍴</span>
+          </div>
+          <div class="meal-list" id="mealList">
+            <p class="empty-message">
+              No meals added yet. Add your first meal below!
+            </p>
+          </div>
+        </section>
+
+        <!-- Add Meal Card -->
+        <section class="card add-meal-card">
+          <div class="card-header">
+            <h2 class="card-title">Add New Meal</h2>
+            <span class="card-icon">➕</span>
+          </div>
+          <form class="add-meal-form" id="addMealForm">
+            <div class="form-group">
+              <label for="mealName">Meal Name</label>
+              <input
+                type="text"
+                id="mealName"
+                placeholder="e.g., Grilled Chicken Salad"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="mealType">Meal Type</label>
+              <select id="mealType" required>
+                <option value="Breakfast">🌅 Breakfast</option>
+                <option value="Lunch">☀️ Lunch</option>
+                <option value="Dinner">🌙 Dinner</option>
+                <option value="Snack">🍎 Snack</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="calories">Calories</label>
+              <input
+                type="number"
+                id="calories"
+                placeholder="e.g., 450"
+                required
+                min="0"
+              />
+            </div>
+            <button type="submit" class="btn">Add Meal</button>
+          </form>
+        </section>
+
+        <!-- Weekly Overview Card -->
+        <section class="card weekly-card">
+          <div class="card-header">
+            <h2 class="card-title">Weekly Overview</h2>
+            <span class="card-icon">📈</span>
+          </div>
+          <div class="weekly-chart">
+            <div class="chart-bars" id="weeklyChart"></div>
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <script src="dashboard.js" checkUserSession()></script>
+    <script src="session_guard.js"></script>
+  </body>
+</html>

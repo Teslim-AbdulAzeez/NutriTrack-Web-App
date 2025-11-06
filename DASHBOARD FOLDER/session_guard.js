@@ -1,0 +1,34 @@
+// ============================================
+// SESSION GUARD - PROTECTS ALL PAGES
+// ============================================
+
+// This function checks if a user is logged in
+// If not, it redirects them to the login page
+function checkUserSession() {
+  const currentUser = localStorage.getItem("currentUser");
+
+  if (!currentUser) {
+    console.log(" No active session. Redirecting to login...");
+    window.location.href = "../SIGN IN FOLDER/sign_in.html";
+    return false;
+  }
+
+  try {
+    const userData = JSON.parse(currentUser);
+    if (!userData.username || !userData.email) {
+      console.log("Invalid session data. Redirecting to login...");
+      localStorage.removeItem("currentUser");
+      window.location.href = "../SIGN IN FOLDER/sign_in.html";
+      return false;
+    }
+    return true;
+  } catch (error) {
+    console.log(" Session data corrupted. Redirecting to login...");
+    localStorage.removeItem("currentUser");
+    window.location.href = "../SIGN IN FOLDER/sign_in.html";
+    return false;
+  }
+}
+
+// Add this line to profile.html and home.html in the first <script> tag:
+// checkUserSession();

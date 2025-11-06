@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgba(32, 30, 30, 0.726);
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+}
+.header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  align-items: center;
+}
+.image_logo {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 10%;
+}
+.header_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.header_heading {
+  font-size: 2.7rem;
+  color: black;
+}
+.header-nav {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+.header_unordered_list_items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 3.2rem;
+}
+.header_nav_button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 2px solid rgb(247, 237, 237);
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.header_nav_button:hover {
+  background-color: rgb(247, 237, 237);
+  color: black;
+}
+.header_unordered_list_item_link {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+/* PSEUDO CLASS= APPLIED FOR THE PURPOSE OF AN INTERACTION ON A WEBSITE */
+.header_unordered_list_item_link:hover {
+  color: rgb(247, 237, 237);
+}
+
+.container {
+  max-width: 80%;
+  margin: 10rem auto;
+  padding: 3rem;
+  background-color: rgb(247, 237, 237);
+  border-radius: 1.5rem;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+}
+.both_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.greeting_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.greeting_container .greeting h2 {
+  font-size: 1.2em;
+}
+.greeting_container .greeting p {
+  font-size: 0.9em;
+  color: gray;
+}
+.greeting_container.notification img {
+  width: 3rem;
+}
+.bell_icon {
+  text-decoration: none;
+}
+.diet-assistant h3 {
+  font-size: 0.8em;
+  color: gray;
+}
+.diet-assistant h1 {
+  font-size: 1.5em;
+}
+.daily-checkin {
+  background-color: #000;
+  color: white;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  flex-grow: 1;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.daily-checkin .days {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.daily-checkin .days span {
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 0.8em;
+  background-color: #222;
+}
+.daily-checkin .days .active {
+  background-color: #4caf50;
+}
+.daily-checkin .meals {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.daily-checkin .meal p {
+  font-weight: bold;
+}
+.daily-checkin .log-meal {
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.log-meal:hover {
+  background-color: white;
+  color: red;
+  border: 3px solid red;
+  transform: translateY(2px);
+}
+.suggestion {
+  display: flex;
+  background-color: #fff;
+  padding: 2.5rem;
+  flex-grow: 1;
+  height: 22rem;
+  border-radius: 1rem;
+  justify-content: space-between;
+  border: #fff 3px solid;
+}
+.meal_suggestion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 2rem;
+  width: 40%;
+  gap: 1rem;
+}
+.take_suggestions-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 1.2rem;
+  width: 15rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.take_suggestions-btn:hover {
+  background-color: white;
+  color: #4caf50;
+  border: 2px solid #4caf50;
+  transform: translateY(2px);
+}
+.suggestion_description {
+  font-size: 1.4rem;
+  color: black;
+  font-weight: 500;
+}
+.meal_image {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 10%;
+  margin-right: 1rem;
+}
+.community .community-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  border: #fff 3px solid;
+  width: 70%;
+  height: 12rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hand {
+  width: 10rem;
+  height: 8rem;
+  margin-right: 1rem;
+}
+.community_extension {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+.community_nutrition,
+.line_break {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.visit {
+  font-weight: lighter;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding-top: 1rem;
+  cursor: pointer;
+}
+.community_icon {
+  margin-left: 35rem;
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+i {
+  font-size: 7rem;
+  color: orange;
+}
+.notification_icon {
+  font-size: 3.5rem;
+  color: black;
+}
+
+/* RESPONSIVE DESIGN FOR MOBILE DEVICES */
+@media (max-width: 900px) {
+  .container {
+    max-width: 95%;
+    margin: 8rem auto;
+    padding: 2rem;
+  }
+  .daily-checkin,
+  .suggestion,
+  .community .community-card {
+    height: auto;
+  }
+  .meal_image {
+    width: 12rem;
+    height: 12rem;
+  }
+  .community .community-card {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+  .community_icon {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 55%;
+  }
+  .both_container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .daily-checkin,
+  .suggestion {
+    width: 100%;
+  }
+  .meal_suggestion {
+    width: 100%;
+    margin-right: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .take_suggestions-btn {
+    width: 80%;
+  }
+}
+@media (max-width: 420px) {
+  html {
+    font-size: 50%;
+  }
+  .header_heading {
+    font-size: 2.2rem;
+  }
+  .header_nav_button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 360px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 40%;
+  }
+}

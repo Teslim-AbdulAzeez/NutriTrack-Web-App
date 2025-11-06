@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="sign_in.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sign_in-container">
+      <!-- Form Heading -->
+      <div class="header_container">
+        <span class="logo_image">
+          <img src="logo image.jpg" alt="Logo" />
+        </span>
+        <h3 class="form_section-header">NutriTrack</h3>
+      </div>
+      <!-- FORM CONTAINER -->
+      <form class="main_section" id="signupForm">
+        <!-- USERNAME -->
+        <div class="username">
+          <label for="Username">Username</label>
+          <input type="text" id="Username" placeholder="John Doe" />
+          <span class="error-message" id="usernameError"></span>
+        </div>
+        <!-- MAIL AND PHONE NUMBER -->
+        <div class="mail">
+          <label for="Email or Phone Number">Email or Phone Number</label>
+          <input
+            type="text"
+            id="Email or Phone Number"
+            placeholder="johndoe@gmail.com"
+          />
+          <span class="error-message" id="emailError"></span>
+        </div>
+        <!-- PASSWORD -->
+        <div class="password">
+          <label for="pwd1">Password</label>
+          <input type="password" id="pwd1" placeholder="johndoe1234" />
+          <span class="error-message" id="pwd1Error"></span>
+        </div>
+        <!-- CONFIRM PASSWORD -->
+        <div class="password confirm">
+          <label for="pwd2">Confirm Password</label>
+          <input type="password" id="pwd2" placeholder="johndoe1234" />
+          <span class="error-message" id="pwd2Error"></span>
+        </div>
+        <!-- GOAL SELECTION -->
+        <div class="goals">
+          <label for="goal">Select Goal</label>
+          <select id="goal">
+            <option>Options</option>
+            <option>Weight Loss</option>
+            <option>Muscle Enhancement</option>
+            <option>Maintenance</option>
+            <option>Weight Gain</option>
+          </select>
+          <span class="error-message" id="goalError"></span>
+        </div>
+        <div class="button">
+          <button
+            class="submit-btn"
+            type="submit"
+            href="../HOME SCREEN FOLDER/home.html"
+            target="_blank"
+          >
+            <span class="login_link">Login</span>
+          </button>
+        </div>
+        <!-- Success Message -->
+        <span class="success-message" id="successMessage"></span>
+      </form>
+    </section>
+
+    <!-- Link to our JavaScript file -->
+    <script src="sign_in.js"></script>
+  </body>
+</html>
