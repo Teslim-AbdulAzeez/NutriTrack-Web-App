@@ -185,7 +185,7 @@ function setupLogoutButton() {
     console.log("[v0] User logged out. All session data cleared.");
 
     // Redirect to login page
-    window.location.href = "sign_in.html";
+    window.location.href = "../SIGN IN FOLDER/sign_in.html";
   });
 }
 
@@ -198,7 +198,7 @@ const logMealBtn = document.querySelector(".log-meal");
 if (logMealBtn) {
   logMealBtn.addEventListener("click", () => {
     console.log("[v0] Log Meal button clicked");
-    alert("Meal logging feature coming soon!");
+    window.location.href = "../LOG MEAL FOLDER/logmeal.html";
     // You can add navigation to meal logging page here
   });
 }

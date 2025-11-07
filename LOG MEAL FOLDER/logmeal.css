@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgba(32, 30, 30, 0.726);
+  font-size: 1.6rem;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  align-items: center;
+}
+.image_logo {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 10%;
+}
+.header_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.header_heading {
+  font-size: 2.7rem;
+  color: black;
+}
+.header-nav {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+.header_unordered_list_items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 3.2rem;
+}
+.header_nav_button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 2px solid rgb(247, 237, 237);
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.header_nav_button:hover {
+  background-color: rgb(247, 237, 237);
+  color: black;
+}
+.header_unordered_list_item_link {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+/* PSEUDO CLASS= APPLIED FOR THE PURPOSE OF AN INTERACTION ON A WEBSITE */
+.header_unordered_list_item_link:hover {
+  color: rgb(247, 237, 237);
+}
+.main-container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.log-meal__section {
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.log-meal,
+.logged-meal,
+.food-suggestions {
+  background-color: rgb(247, 237, 237);
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+.meal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+.text-group {
+  line-height: 1.5;
+}
+.paragraph {
+  color: grey;
+}
+label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.main-heading {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: rgb(247, 237, 237);
+}
+.main-paragraph.paragraph {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: black;
+}
+
+.setup-meal {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2.5rem;
+  margin: 2.5rem 0;
+}
+.log-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.log-heading {
+  margin-bottom: 2.5rem;
+}
+.meal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.meal-info,
+.meal-nutrients {
+  display: flex;
+  gap: 1.5rem;
+}
+.setup-meal .log-group .meal-form input,
+.setup-meal .log-group .meal-form select {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  width: 100%;
+}
+.log-meal-btn {
+  padding: 1rem;
+  background-color: black;
+  color: rgb(247, 237, 237);
+  border: none;
+  border-radius: 1rem;
+}
+.logged-meal-stat {
+  text-align: center;
+}
+.logged-meals {
+  margin: 32px auto;
+}
+.suggested-food {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.suggested-food:hover {
+  background-color: rgb(247, 237, 237);
+}
+.food-suggested {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.suggested-nutrient {
+  font-size: smaller;
+}

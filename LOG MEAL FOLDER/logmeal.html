@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log Meal</title>
+    <link rel="stylesheet" href="logmeal.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <header class="header">
+      <div class="header_logo">
+        <span class="logo_image"
+          ><img
+            src="../PROFILE FOLDER/logo image.jpg"
+            alt="NutriTrack Logo"
+            class="image_logo"
+        /></span>
+        <h1 class="header_heading">NutriTrack</h1>
+      </div>
+      <nav class="header-nav">
+        <ul class="header_unordered_list_items">
+          <li class="header_unordered_list_item">
+            <a
+              href="../HOME SCREEN FOLDER/home.html"
+              class="header_unordered_list_item_link"
+              >Home</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a href="./logmeal.html" class="header_unordered_list_item_link"
+              >Log Meals</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a href="" class="header_unordered_list_item_link"
+              >Meal Suggestions</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../DASHBOARD FOLDER/dashboard.html"
+              class="header_unordered_list_item_link"
+              >Dashboard</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../COMMUNITY FOLDER/community.html"
+              class="header_unordered_list_item_link"
+            >
+              Community</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../REMINDER FOLDER/reminder.html"
+              class="header_unordered_list_item_link"
+              >Reminder</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../PROFILE FOLDER/profile.html"
+              class="header_unordered_list_item_link"
+              >Profile</a
+            >
+          </li>
+        </ul>
+        <button
+          class="header_nav_button"
+          type="submit"
+          href="../index.html"
+          id="logoutBtn"
+          target="_blank"
+        >
+          logout
+        </button>
+      </nav>
+    </header>
+    <section class="log-meal__section">
+      <div class="main-container">
+        <div class="text-group">
+          <h1 class="main-heading">Log Your Meal</h1>
+          <p class="main-paragraph paragraph">
+            Track what you eat to meet your fitness goals.
+          </p>
+        </div>
+        <div class="setup-meal">
+          <div class="log-group">
+            <div class="log-meal">
+              <h2 class="log-heading">Add New Meal</h2>
+              <form class="meal-form">
+                <div class="meal-info">
+                  <div class="meal-name meal">
+                    <label for="meal-name">Meal Name</label>
+                    <input
+                      type="text"
+                      name="meal-name"
+                      placeholder="e.g Jollof Rice"
+                      id="meal-name"
+                    />
+                  </div>
+                  <div class="meal-type meal">
+                    <label for="meal-type">Meal Type</label>
+                    <select name="meals" id="meal-type">
+                      <option value="breakfast">Breakfast</option>
+                      <option value="lunch">Lunch</option>
+                      <option value="dinner">Dinner</option>
+                      <option value="snacks">Snacks</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="meal-nutrients">
+                  <div class="meal-calories meal">
+                    <label for="calories">Calories</label>
+                    <input
+                      type="number"
+                      id="calories"
+                      name="calories"
+                      value="0"
+                    />
+                  </div>
+                  <div class="meal-protein meal">
+                    <label for="protein">Protein (g)</label>
+                    <input
+                      type="number"
+                      id="protein"
+                      name="protein"
+                      value="0"
+                    />
+                  </div>
+                  <div class="meal-carbs meal">
+                    <label for="carbs">Carbs (g)</label>
+                    <input type="number" id="carbs" name="carbs" value="0" />
+                  </div>
+                  <div class="meal-fats meal">
+                    <label for="fats">Fats (g)</label>
+                    <input type="number" id="fats" name="fats" value="0" />
+                  </div>
+                </div>
+                <button type="submit" class="log-meal-btn">Log meal</button>
+              </form>
+            </div>
+            <div class="logged-meal">
+              <div class="text-group">
+                <h2 class="logged-heading">Today's Meals</h2>
+                <p class="logged-paragraph paragraph">0 meal logged</p>
+              </div>
+              <div class="logged-meal-stat">
+                <p class="logged-meals paragraph">No Meals Logged Yet</p>
+              </div>
+            </div>
+          </div>
+          <div class="food-suggestions">
+            <div class="text-group">
+              <h2 class="suggestion-heading">Nigerian Foods</h2>
+              <p class="suggestion-paragraph paragraph">
+                Quickly add popular meals
+              </p>
+            </div>
+            <div class="suggested-food">
+              <p class="food-suggested">Jollof Rice</p>
+              <p class="suggested-nutrient paragraph">250 cal</p>
+            </div>
+            <div class="suggested-food">
+              <p class="food-suggested">Egusi Soup</p>
+              <p class="suggested-nutrient paragraph">180 cal</p>
+            </div>
+            <div class="suggested-food">
+              <p class="food-suggested">Pepper Soup</p>
+              <p class="suggested-nutrient paragraph">120 cal</p>
+            </div>
+            <div class="suggested-food">
+              <p class="food-suggested">Fufu</p>
+              <p class="suggested-nutrient paragraph">200 cal</p>
+            </div>
+            <div class="suggested-food">
+              <p class="food-suggested">Moi Moi</p>
+              <p class="suggested-nutrient paragraph">150 cal</p>
+            </div>
+            <div class="suggested-food">
+              <p class="food-suggested">Akara</p>
+              <p class="suggested-nutrient paragraph">180 cal</p>
+            </div>
+            <div class="suggested-food">
+              <p class="food-suggested">Suya</p>
+              <p class="suggested-nutrient paragraph">220 cal</p>
+            </div>
+            <div class="suggested-food">
+              <p class="food-suggested">Pounded Yam</p>
+              <p class="suggested-nutrient paragraph">220 cal</p>
+            </div>
+            <div class="suggested-food">
+              <p class="food-suggested">Garri & Soup</p>
+              <p class="suggested-nutrient paragraph">200 cal</p>
+            </div>
+            <div class="suggested-food">
+              <p class="food-suggested">Beans & Plantain</p>
+              <p class="suggested-nutrient paragraph">210 cal</p>
+            </div>
+            <div class="suggested-food">
+              <p class="food-suggested">Chin Chin</p>
+              <p class="suggested-nutrient paragraph">160 cal</p>
+            </div>
+            <div class="suggested-food">
+              <p class="food-suggested">Meat Pie</p>
+              <p class="suggested-nutrient paragraph">280 cal</p>
+            </div>
+            <div class="suggested-food">
+              <p class="food-suggested">Okra Soup</p>
+              <p class="suggested-nutrient paragraph">140 cal</p>
+            </div>
+            <div class="suggested-food">
+              <p class="food-suggested">Amala</p>
+              <p class="suggested-nutrient paragraph">170 cal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="logmeal.js" checkUserSession()></script>
+    <script src="session_guard.js"></script>
+  </body>
+</html>
