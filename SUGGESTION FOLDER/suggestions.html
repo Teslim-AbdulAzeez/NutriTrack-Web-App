@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="mealsuggestionpage html/css/js" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Suggestion</title>
+    <link rel="stylesheet" href="suggestions.css" type="text/css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="suggestions.js" defer checkUserSession()></script>
+    <script src="session_guard.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <header class="header">
+      <div class="header_logo">
+        <span class="logo_image"
+          ><img
+            src="../PROFILE FOLDER/logo image.jpg"
+            alt="NutriTrack Logo"
+            class="image_logo"
+        /></span>
+        <h1 class="header_heading">NutriTrack</h1>
+      </div>
+      <nav class="header-nav">
+        <ul class="header_unordered_list_items">
+          <li class="header_unordered_list_item">
+            <a
+              href="../HOME SCREEN FOLDER/home.html"
+              class="header_unordered_list_item_link"
+              >Home</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../LOG MEAL FOLDER/logmeal.html"
+              class="header_unordered_list_item_link"
+              >Log Meals</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a href="./suggestions.html" class="header_unordered_list_item_link"
+              >Meal Suggestions</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../DASHBOARD FOLDER/dashboard.html"
+              class="header_unordered_list_item_link"
+              >Dashboard</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../COMMUNITY FOLDER/community.html"
+              class="header_unordered_list_item_link"
+            >
+              Community</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../REMINDER FOLDER/reminder.html"
+              class="header_unordered_list_item_link"
+              >Reminder</a
+            >
+          </li>
+          <li class="header_unordered_list_item">
+            <a
+              href="../PROFILE FOLDER/profile.html"
+              class="header_unordered_list_item_link"
+              >Profile</a
+            >
+          </li>
+        </ul>
+        <button
+          class="header_nav_button"
+          type="submit"
+          href="../index.html"
+          id="logoutBtn"
+          target="_blank"
+        >
+          logout
+        </button>
+      </nav>
+    </header>
+    <!-- END OF NAV BAR -->
+
+    <div class="header-dietary-assistant">
+      <p class="header-p">Dietary Assistant</p>
+      <h1 class="header-head">Smart Meal Suggestions</h1>
+      <div class="header-food-filter">
+        <!-- Added role and aria-pressed attributes for better accessibility -->
+        <button class="all" role="button" aria-pressed="true">All</button>
+        <button class="gain" role="button" aria-pressed="false">
+          Weight Gain
+        </button>
+        <button class="loss" role="button" aria-pressed="false">
+          Weight Loss
+        </button>
+        <button class="cereal" role="button" aria-pressed="false">
+          Cereal
+        </button>
+        <button class="diet" role="button" aria-pressed="false">Dietary</button>
+      </div>
+    </div>
+
+    <main class=".column-grid">
+      <section class="first">
+        <div class="column gain all">
+          <div class="inner-column cereal">
+            <img
+              src="./Image Folder/Rice.jpg"
+              alt="image of rice"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Rice</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/Beans.jpg"
+              alt="image of beans"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Beans</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column cereal">
+            <img
+              src="./Image Folder/Corn.jpg"
+              alt="image of corn"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Corn</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/cowmeat.jpg"
+              alt="image of cow-meat"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Cow-meat</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/chicken.jpeg"
+              alt="image of chicken"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Chicken</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/fish.jpg"
+              alt="image of fish"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Fish</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/eggs.jpg"
+              alt="image of  eggs"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Eggs</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/yam.jpeg"
+              alt="image of  yam"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Yam</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/milk.jpeg"
+              alt="image of  milk"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Milk</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/garri.jpg"
+              alt="image of garri"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Garri</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/spag.jpg"
+              alt="image of spaghetti"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Spaghetti</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="second">
+        <div class="column loss diet all">
+          <div class="inner-column">
+            <img
+              src="./Image Folder/Banana.jpg"
+              alt="image of banana"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Banana</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/Apples.jpg"
+              alt="image of Apple"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Apple</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/Orange.jpg"
+              alt="image of Orange"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Orange</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/watermelon.avif"
+              alt="image of watermelon"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Watermelon</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/lime.jpg"
+              alt="image of lime"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Lime</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/lemon.jpg"
+              alt="image of lemon"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Lemon</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/pineapple.jpg"
+              alt="image of pineapple"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Pineapple</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/mango.jpg"
+              alt="image of mango"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Mango</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/carrot.jpg"
+              alt="image of carrot"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Carrot</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/cucumber.jpg"
+              alt="image of cucumber"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Cucumber</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/spinach.jpg"
+              alt="image of spinach"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Spinach</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="third">
+        <div class="column cereal diet all">
+          <div class="inner-column">
+            <img
+              src="./Image Folder/Oat.jpg"
+              alt="image ot Oat-meal"
+              loading="lazy"
+            />
+            <div class="caption">
+              <p>Oat-meal</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/corn-flakes.jpg"
+              alt="image of corn-flakes"
+              loading="lazy"
+            />
+
+            <div class="caption">
+              <p>Corn-Flakes</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/Golden-morn.jpg"
+              alt="image of golden morn"
+              loading="lazy"
+            />
+
+            <div class="caption">
+              <p>Golden-morn</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/millet.jpg"
+              alt="image of millet"
+              loading="lazy"
+            />
+
+            <div class="caption">
+              <p>Millet</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+
+          <div class="inner-column">
+            <img
+              src="./Image Folder/sorghum.jpg"
+              alt="image of sorghum"
+              loading="lazy"
+            />
+
+            <div class="caption">
+              <p>Sorghum</p>
+              <i class="ph ph-heart-straight icon"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

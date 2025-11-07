@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 63.5%;
+}
+
+body {
+  width: 100vw;
+  background-color: rgba(32, 30, 30, 0.726);
+  min-height: 100vh;
+  padding: 2rem;
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  align-items: center;
+}
+.image_logo {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 10%;
+}
+.header_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.header_heading {
+  font-size: 2.7rem;
+  color: black;
+}
+.header-nav {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+.header_unordered_list_items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 3.2rem;
+}
+.header_nav_button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 2px solid rgb(247, 237, 237);
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_nav_button:hover {
+  background-color: rgb(247, 237, 237);
+  color: black;
+}
+.header_unordered_list_item_link {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+/* PSEUDO CLASS= APPLIED FOR THE PURPOSE OF AN INTERACTION ON A WEBSITE */
+.header_unordered_list_item_link:hover {
+  color: rgb(247, 237, 237);
+}
+
+.header-dietary-assistant {
+  margin-top: 8rem;
+  color: #ffffff;
+}
+.header-head {
+  font-size: 5rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.header-food-filter {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x-mandatory;
+  scroll-behavior: smooth;
+}
+
+.header-p {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+button {
+  border: none;
+  width: 15rem;
+  height: 4rem;
+  background-color: rgba(32, 30, 30, 0.726);
+  color: #ff8695;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Enhanced button states for better visual feedback */
+button:hover {
+  background-color: rgb(247, 237, 237);
+  transform: translateY(-2px);
+}
+
+button:focus {
+  outline: none;
+  background-color: #000000;
+  color: #aaf683;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+button:focus:hover {
+  transform: translateY(-2px);
+  background-color: rgb(247, 237, 237);
+}
+
+/* Added active class styling for selected filter button */
+button.active {
+  background-color: #000000;
+  color: #aaf683;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+  min-height: 5rem;
+  aspect-ratio: 1 / 1;
+  display: block;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  transition: transform 0.2s ease;
+}
+
+/* Add hover effect to food images */
+img:hover {
+  transform: scale(1.05);
+}
+
+.inner-column {
+  border: 1rem solid #ffffff;
+  border-radius: 1rem;
+  margin: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+/* Add hover effect to food cards */
+.inner-column:hover {
+  box-shadow: 0 4px 12px rgba(255, 134, 149, 0.2);
+}
+
+.caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(247, 237, 237);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.column {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(11, 40%);
+  gap: 5px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x-mandatory;
+  scroll-behavior: smooth;
+}
+
+/* Enhanced heart icon styling for interactive feel */
+.ph-heart-straight {
+  fill: #ff8695;
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+/* Add filled heart styling when marked as favorite */
+.ph-heart-straight.icon-filled {
+  fill: #ff1744;
+  transform: scale(1.2);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  body {
+    padding: 4rem;
+  }
+  .caption,
+  .header-p {
+    font-size: 2.2rem;
+  }
+  .header.head {
+    font-size: 3.5rem;
+  }
+  .column {
+    display: grid;
+    grid-template-columns: repeat(12, 30%);
+  }
+  .hidden {
+    display: none;
+  }
+}

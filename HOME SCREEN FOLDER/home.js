@@ -212,7 +212,7 @@ const takeSuggestionsBtn = document.querySelector(".take_suggestions-btn");
 if (takeSuggestionsBtn) {
   takeSuggestionsBtn.addEventListener("click", () => {
     console.log("[v0] Take Suggestions button clicked");
-    alert("Meal suggestions feature coming soon!");
+    window.location.href = "../SUGGESTION FOLDER/suggestions.html";
     // You can add navigation to suggestions page here
   });
 }
