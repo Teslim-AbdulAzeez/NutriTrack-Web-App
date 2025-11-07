@@ -1,32 +1,13 @@
 // ============================================
-// SESSION PROTECTION
+// SESSION CHECK
 // ============================================
 function checkUserSession() {
-  const currentUser = localStorage.getItem("currentUser");
-  if (!currentUser) {
-    console.log(" No active session. Redirecting to login...");
+  const storedUser = localStorage.getItem("currentUser");
+  if (!storedUser) {
+    console.log("No user session found. Redirecting to login page.");
     window.location.href = "../SIGN IN FOLDER/sign_in.html";
-    return false;
-  }
-
-  try {
-    const userData = JSON.parse(currentUser);
-    if (!userData.username || !userData.email) {
-      console.log("[v0] Invalid session data. Redirecting to login...");
-      localStorage.removeItem("currentUser");
-      window.location.href = "../SIGN IN FOLDER/sign_in.html";
-      return false;
-    }
-    return true;
-  } catch (error) {
-    console.log(" Session data corrupted. Redirecting to login...");
-    localStorage.removeItem("currentUser");
-    window.location.href = "../SIGN IN FOLDER/sign_in.html";
-    return false;
   }
 }
-
-// Check session immediately
 checkUserSession();
 
 // ============================================
