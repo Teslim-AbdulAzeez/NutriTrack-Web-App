@@ -13,6 +13,12 @@ html {
     font-size: 37%;
   }
 }
+@media (min-width: 321px) and (max-width: 375px) {
+  html {
+    font-size: 42%;
+  }
+}
+
 body {
   background-color: black;
   color: rgb(247, 237, 237);
