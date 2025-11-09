@@ -29,14 +29,12 @@ body {
   justify-content: space-between;
   padding: 0.5rem 1rem;
   align-items: center;
-  
 }
 .image_logo {
   height: 5rem;
   width: 5rem;
- border-radius: 10%;
-  border: 1px solid  black;
-
+  border-radius: 10%;
+  border: 1px solid black;
 }
 .header_logo {
   display: flex;
@@ -122,13 +120,7 @@ body {
   text-align: center;
   font-weight: 600;
 }
-/* .hamburger {
-  display: none;
-  font-size: 5rem;
-  cursor: pointer;
-  color: black;
-  font-weight: 600;
-} */
+
 button {
   border: none;
   background-color: rgba(32, 30, 30, 0.726);
@@ -268,10 +260,6 @@ img:hover {
   .caption,
   .header-p {
     font-size: 1.8rem;
-  }
-  .column {
-    display: grid;
-    grid-template-columns: repeat(6, 70%);
   }
 }
 @media (min-width: 600px) {
